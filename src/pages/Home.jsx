@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
+import ProfileImage from "../assets/images/portfolio.png";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
           <div className="w-full h-full overflow-hidden">
             <img
               className="rounded-2xl w-full h-full object-cover"
-              src="src/assets/images/portfolio.png"
+              src={ProfileImage}
               alt="portfolio"
             />
           </div>
