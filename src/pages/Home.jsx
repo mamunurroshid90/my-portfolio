@@ -10,7 +10,7 @@ const Home = () => {
           <div className="w-full h-full overflow-hidden">
             <img
               className="rounded-2xl w-full h-full object-cover"
-              src="/src/assets/images/portfolio.png"
+              src="src/assets/images/portfolio.png"
               alt="portfolio"
             />
           </div>
