@@ -8,7 +8,7 @@ const Home = () => {
     <section>
       <div className="max-w-container mx-auto py-12 px-10 h-[80vh]">
         <div className="flex items-center justify-between gap-16">
-          <div className="w-full h-full overflow-hidden">
+          <div className="w-[950px] h-[500px] overflow-hidden">
             <img
               className="rounded-2xl w-full h-full object-cover"
               src={ProfileImage}
