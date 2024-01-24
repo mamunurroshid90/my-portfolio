@@ -9,25 +9,25 @@ const Navbar = () => {
           <div className="flex items-center justify-around">
             <NavLink
               to="/"
-              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-red-300"
+              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-yellow-400"
             >
               home
             </NavLink>
             <NavLink
               to="about"
-              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-red-300"
+              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-yellow-400"
             >
               about
             </NavLink>
             <NavLink
-              to="portfolio"
-              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-red-300"
+              to="all-project"
+              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-yellow-400"
             >
               portfolio
             </NavLink>
             <NavLink
               to="contact"
-              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-red-300"
+              className="font-roboto text-lg capitalize font-bold text-white hover:text-gray-300 transition-all duration-300 [&.active]:text-yellow-400"
             >
               contact
             </NavLink>

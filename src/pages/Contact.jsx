@@ -7,14 +7,13 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillSendFill } from "react-icons/bs";
+import SectionHeading from "../components/SectionHeading";
 
 const Contact = () => {
   return (
     <section className=" px-[10px]">
       <div className="max-w-container mx-auto py-12 px-10 h-[80vh]">
-        <h1 className="text-[50px] text-center font-roboto font-bold uppercase text-white leading-normal">
-          get in <span className=" text-yellow-400">touch</span>
-        </h1>
+        <SectionHeading heading={"get in"} span={"touch"} />
         <div className=" mt-10 flex items-start gap-10 justify-between">
           <div className=" w-[400px]">
             <h2 className=" text-3xl text-white font-roboto uppercase font-bold">
