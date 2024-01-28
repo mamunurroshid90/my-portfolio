@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       maxWidth: {
-        container: "1200px",
+        container: "1400px",
       },
       fontFamily: {
         roboto: '"Roboto", sans-serif',

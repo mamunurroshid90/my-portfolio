@@ -2,23 +2,25 @@ import React, { useState } from "react";
 import SectionHeading from "../../components/SectionHeading";
 import Data from "../../pages/my-portfolio/Data";
 import { Link } from "react-router-dom";
-
-// console.log(Items);
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const [items, setItems] = useState(Data);
 
-  const filterItem = (cetegItem) => {
+  const filterItem = (categItem) => {
     const updatedItems = Data.filter((curItem) => {
-      return curItem.category === cetegItem;
+      return curItem.category === categItem;
     });
     setItems(updatedItems);
   };
 
-  console.log(items);
   return (
-    <section>
-      <div className="max-w-container mx-auto">
+    <motion.section
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.9 }}
+    >
+      <div className="max-w-container mx-auto pb-20 h-full">
         <SectionHeading heading={"my"} span={"portfolio"} />
         <div className=" justify-center flex gap-5 mt-10">
           <button
@@ -46,30 +48,40 @@ const Portfolio = () => {
             react
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-5 mt-20 pb-20">
+        <div className="grid grid-cols-3 justify-around gap-8 mt-20">
           {items.map((item, index) => {
-            const { id, image, category, liveLink, sourceCode, title } = item;
+            const { id, image, liveLink, sourceCode, title, descriptions } =
+              item;
 
             return (
-              <div className="card w-96 bg-base-100 shadow-xl image-full">
+              <motion.div
+                className="card w-auto bg-base-100 shadow-xl image-full "
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.9 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <figure>
-                  <img src={image} alt="Shoes" />
+                  <img src={image} alt="image" />
                 </figure>
-                <div className="card-body">
+                <div className="card-body hover:bg-base-100 duration-500 hover:rounded-xl">
                   <h2 className="card-title uppercase font-roboto font-bold text-xl">
-                    {item.title}
+                    {title}
                   </h2>
-                  <p className=" font-roboto text-base">
-                    If a dog chews shoes whose shoes does he choose?
+                  <p className=" font-roboto text-base font-semibold capitalize">
+                    {descriptions}
                   </p>
                   <div className="card-actions justify-between">
                     <Link
+                      to={liveLink}
                       target="_blank"
                       className="btn btn-outline btn-warning text-white capitalize text-lg"
                     >
                       live link
                     </Link>
                     <Link
+                      to={sourceCode}
                       target="_blank"
                       className="btn btn-warning btn-outline hover:text-white capitalize text-lg"
                     >
@@ -77,12 +89,12 @@ const Portfolio = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

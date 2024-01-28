@@ -8,11 +8,23 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillSendFill } from "react-icons/bs";
 import SectionHeading from "../components/SectionHeading";
+import { motion } from "framer-motion";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("mdoqaywp");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+
   return (
-    <section className=" px-[10px]">
-      <div className="max-w-container mx-auto py-12 px-10 h-[80vh]">
+    <motion.section
+      className=" px-[10px]"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.9 }}
+    >
+      <div className="max-w-container mx-auto py-12 px-10 h-[100vh]">
         <SectionHeading heading={"get in"} span={"touch"} />
         <div className=" mt-10 flex items-start gap-10 justify-between">
           <div className=" w-[400px]">
@@ -84,23 +96,39 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-[800px] mx-auto">
-            <form action="">
+            <form
+              action="https://formspree.io/f/mdoqaywp"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
               <div>
                 <div className="flex items-center justify-between gap-5">
                   <div className=" w-[350px]">
                     <input
+                      id="name"
                       type="text"
                       name="name"
                       placeholder="YOUR NAME"
                       className="w-full px-4 py-3 rounded-full text-white text-lg font-roboto bg-[#383838] placeholder:text-lg placeholder:font-roboto placeholder:text-[#757575] placeholder:font-semibold"
                     />
+                    <ValidationError
+                      prefix="name"
+                      field="name"
+                      errors={state.errors}
+                    />
                   </div>
                   <div className="w-[350px]">
                     <input
+                      id="email"
                       type="email"
                       name="email"
                       placeholder="YOUR EMAIL"
                       className="w-full px-4 py-3 rounded-full text-white text-lg font-roboto bg-[#383838] placeholder:text-lg placeholder:font-roboto placeholder:text-[#757575] placeholder:font-semibold"
+                    />
+                    <ValidationError
+                      prefix="Email"
+                      field="email"
+                      errors={state.errors}
                     />
                   </div>
                 </div>
@@ -114,26 +142,37 @@ const Contact = () => {
                 </div>
                 <div className="mt-9">
                   <textarea
+                    id="message"
                     name="message"
-                    id=""
                     placeholder="YOUR MESSAGE"
                     className="w-full px-4 py-3 rounded-lg h-[200px] font-roboto text-white text-lg bg-[#383838] placeholder:text-lg placeholder:font-roboto placeholder:text-[#757575] placeholder:font-semibold"
                   ></textarea>
-                  <div className="w-[220px] mt-9 h-[50px] ">
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
+
+                  <button
+                    onClick={() => console.log("clicked")}
+                    type="submit"
+                    disabled={state.submitting}
+                    className="w-[220px] mt-9 h-[50px] "
+                  >
                     <Link className=" pl-6 h-full hover:bg-yellow-400 transition-all duration-300 text-white border border-yellow-400 rounded-full uppercase font-bold font-roboto flex items-center justify-between gap-4">
-                      send message{" "}
+                      send message
                       <div>
                         <BsFillSendFill className=" text-2xl overflow-hidden font-bold bg-yellow-400 h-full w-[50px] inline-block rounded-full" />
                       </div>
                     </Link>
-                  </div>
+                  </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

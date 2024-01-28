@@ -2,11 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import ProfileImage from "../assets/images/portfolio.png";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <section>
-      <div className="max-w-container mx-auto py-12 px-10 h-[80vh]">
+    <motion.section
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.9 }}
+    >
+      <div className="max-w-container mx-auto py-12 px-10 h-[100vh]">
         <div className="flex items-center justify-between gap-16">
           <div className="w-[950px] h-[500px] overflow-hidden">
             <img
@@ -44,7 +49,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
