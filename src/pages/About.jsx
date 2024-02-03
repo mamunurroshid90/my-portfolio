@@ -10,6 +10,10 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiRedux } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { IoMdCloudDownload } from "react-icons/io";
 
 const About = () => {
   return (
@@ -20,30 +24,40 @@ const About = () => {
     >
       <div className="max-w-container mx-auto px-10 h-[100vh] py-12">
         <SectionHeading heading={"about"} span={"me"} />
-        <div className="flex justify-center  gap-[100px] mt-[50px]">
+        <div className="flex justify-between items-center mt-[50px]">
           <div className=" mt-12 ">
-            <h2 className=" font-roboto text-3xl uppercase text-white font-bold">
+            <h2 className=" font-roboto text-xl uppercase text-white font-bold">
               professional info
             </h2>
-            <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-10 py-6 mt-16 rounded-lg">
-              <h3 className=" font-roboto text-xl capitalize text-white font-semibold">
-                <span className=" text-[#888888]">Name:</span> Mamunur Roshid
-              </h3>
-              <p className=" mt-3 font-roboto text-xl text-white font-semibold">
-                <span className=" text-[#888888]">Email: </span>{" "}
-                nijummamun7@gmail.com
-              </p>
-              <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
-                <span className=" text-[#888888]">Nationality:</span>{" "}
-                Bangladeshi
-              </p>
-              <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
-                <span className=" text-[#888888]">Phone:</span> +8801761700244
-              </p>
-              <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
-                <span className=" text-[#888888]">Language:</span> Bengali,
-                English
-              </p>
+            <div className="bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r px-5 py-3 rounded-lg mt-8">
+              <h4 className=" font-roboto text-lg font-bold uppercase text-center text-white">
+                Education
+              </h4>
+              <div className=" font-roboto text-sm font-semibold capitalize mt-2 text-white">
+                <p>graduation: department of bangla</p>
+                <p>institution: dhaka college</p>
+                <p>session: 2017-22</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-between mt-10">
+              <div className="bg-gradient-to-bl from-gray-900 to-gray-600 hover:to-yellow-400 transition-all duration-700 p-6 rounded-full cursor-pointer inline-block">
+                <Link
+                  className="text-xl text-white"
+                  to="https://github.com/mamunurroshid90?tab=repositories"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </Link>
+              </div>
+              <button className="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white px-3 py-3 rounded-lg uppercase font-roboto font-medium text-lg hover:to-yellow-600">
+                <Link
+                  to="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%221avHSyIPJChUEuFVabhG4ZZIFLMHxJAkf%22%5D,%22action%22:%22open%22,%22userId%22:%22100792006489718517770%22,%22resourceKeys%22:%7B%7D%7D"
+                  target="_blank"
+                  className="flex items-center gap-2"
+                >
+                  download cv <IoMdCloudDownload className=" text-xl" />
+                </Link>
+              </button>
             </div>
           </div>
           <div className="w-[800px] ">
@@ -54,7 +68,7 @@ const About = () => {
             <div className="flex flex-wrap gap-10 mt-16 justify-center">
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 80 }}
                   role="progressbar"
                 >
@@ -63,7 +77,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 70 }}
                   role="progressbar"
                 >
@@ -72,7 +86,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 70 }}
                   role="progressbar"
                 >
@@ -81,7 +95,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 70 }}
                   role="progressbar"
                 >
@@ -90,7 +104,16 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
+                  style={{ "--value": 70 }}
+                  role="progressbar"
+                >
+                  <FaFigma className=" text-2xl" />
+                </div>
+              </div>
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+                <div
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 50 }}
                   role="progressbar"
                 >
@@ -99,7 +122,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 50 }}
                   role="progressbar"
                 >
@@ -108,7 +131,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 30 }}
                   role="progressbar"
                 >
@@ -117,7 +140,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 30 }}
                   role="progressbar"
                 >
@@ -126,7 +149,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress font-roboto"
+                  className="radial-progress font-roboto text-white"
                   style={{ "--value": 20 }}
                   role="progressbar"
                 >
