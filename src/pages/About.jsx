@@ -1,6 +1,15 @@
 import React from "react";
 import SectionHeading from "../components/SectionHeading";
 import { motion } from "framer-motion";
+import { TfiHtml5 } from "react-icons/tfi";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiBootstrap } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiRedux } from "react-icons/si";
 
 const About = () => {
   return (
@@ -11,144 +20,118 @@ const About = () => {
     >
       <div className="max-w-container mx-auto px-10 h-[100vh] py-12">
         <SectionHeading heading={"about"} span={"me"} />
-        <div className="flex justify-center items-center gap-[100px] mt-[50px]">
+        <div className="flex justify-center  gap-[100px] mt-[50px]">
           <div className=" mt-12 ">
             <h2 className=" font-roboto text-3xl uppercase text-white font-bold">
               professional info
             </h2>
-            <h3 className=" mt-12 font-roboto text-xl capitalize text-white font-semibold">
-              <span className=" text-[#888888]">Name:</span> Mamunur Roshid
-            </h3>
-            <p className=" mt-3 font-roboto text-xl text-white font-semibold">
-              <span className=" text-[#888888]">Email: </span>{" "}
-              nijummamun7@gmail.com
-            </p>
-            <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
-              <span className=" text-[#888888]">Nationality:</span> Bangladeshi
-            </p>
-            <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
-              <span className=" text-[#888888]">Phone:</span> +8801761700244
-            </p>
-            <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
-              <span className=" text-[#888888]">Language:</span> Bengali,
-              English
-            </p>
-            <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
-              <span className=" text-[#888888]">Age:</span> 27
-            </p>
+            <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-10 py-6 mt-16 rounded-lg">
+              <h3 className=" font-roboto text-xl capitalize text-white font-semibold">
+                <span className=" text-[#888888]">Name:</span> Mamunur Roshid
+              </h3>
+              <p className=" mt-3 font-roboto text-xl text-white font-semibold">
+                <span className=" text-[#888888]">Email: </span>{" "}
+                nijummamun7@gmail.com
+              </p>
+              <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
+                <span className=" text-[#888888]">Nationality:</span>{" "}
+                Bangladeshi
+              </p>
+              <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
+                <span className=" text-[#888888]">Phone:</span> +8801761700244
+              </p>
+              <p className=" mt-3 font-roboto text-xl capitalize text-white font-semibold">
+                <span className=" text-[#888888]">Language:</span> Bengali,
+                English
+              </p>
+            </div>
           </div>
           <div className="w-[800px] ">
             <h2 className=" font-roboto text-3xl text-center uppercase mr-[150px] text-white font-bold mt-12">
-              my skills
+              skills
             </h2>
-            <div className="flex flex-wrap gap-10 mt-16">
-              <div className="flex flex-col justify-center items-center gap-2 w-[180px]">
+
+            <div className="flex flex-wrap gap-10 mt-16 justify-center">
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress text-yellow-400 font-roboto"
-                  style={{ "--value": 90 }}
-                  role="progressbar"
-                >
-                  90%
-                </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  html
-                </p>
-              </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
-                <div
-                  className="radial-progress text-yellow-400 font-roboto"
-                  style={{ "--value": 90 }}
-                  role="progressbar"
-                >
-                  90%
-                </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  css
-                </p>
-              </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
-                <div
-                  className="radial-progress text-yellow-400 font-roboto"
+                  className="radial-progress font-roboto"
                   style={{ "--value": 80 }}
                   role="progressbar"
                 >
-                  80%
+                  <TfiHtml5 className=" text-2xl" />
                 </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  bootstrap
-                </p>
               </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress text-yellow-400 font-roboto"
-                  style={{ "--value": 80 }}
-                  role="progressbar"
-                >
-                  80%
-                </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  tailwind
-                </p>
-              </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
-                <div
-                  className="radial-progress text-yellow-400 font-roboto"
+                  className="radial-progress font-roboto"
                   style={{ "--value": 70 }}
                   role="progressbar"
                 >
-                  70%
+                  <IoLogoCss3 className=" text-2xl" />
                 </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  javascript
-                </p>
               </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress text-yellow-400 font-roboto"
-                  style={{ "--value": 80 }}
-                  role="progressbar"
-                >
-                  70%
-                </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  react js
-                </p>
-              </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
-                <div
-                  className="radial-progress text-yellow-400 font-roboto"
+                  className="radial-progress font-roboto"
                   style={{ "--value": 70 }}
                   role="progressbar"
                 >
-                  50%
+                  <SiBootstrap className=" text-2xl" />
                 </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  next js
-                </p>
               </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress text-yellow-400 font-roboto"
+                  className="radial-progress font-roboto"
+                  style={{ "--value": 70 }}
+                  role="progressbar"
+                >
+                  <SiTailwindcss className=" text-2xl" />
+                </div>
+              </div>
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+                <div
+                  className="radial-progress font-roboto"
                   style={{ "--value": 50 }}
                   role="progressbar"
                 >
-                  50%
+                  <IoLogoJavascript className=" text-2xl" />
                 </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  firebase
-                </p>
               </div>
-              <div className="flex flex-col items-center gap-2 w-[180px]">
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
                 <div
-                  className="radial-progress text-yellow-400 font-roboto"
+                  className="radial-progress font-roboto"
                   style={{ "--value": 50 }}
                   role="progressbar"
                 >
-                  50%
+                  <FaReact className=" text-2xl" />
                 </div>
-                <p className=" font-roboto text-lg font-bold uppercase text-white">
-                  node js
-                </p>
+              </div>
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+                <div
+                  className="radial-progress font-roboto"
+                  style={{ "--value": 30 }}
+                  role="progressbar"
+                >
+                  <SiNextdotjs className=" text-2xl" />
+                </div>
+              </div>
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+                <div
+                  className="radial-progress font-roboto"
+                  style={{ "--value": 30 }}
+                  role="progressbar"
+                >
+                  <IoLogoFirebase className=" text-2xl" />
+                </div>
+              </div>
+              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+                <div
+                  className="radial-progress font-roboto"
+                  style={{ "--value": 20 }}
+                  role="progressbar"
+                >
+                  <SiRedux className=" text-2xl" />
+                </div>
               </div>
             </div>
           </div>
