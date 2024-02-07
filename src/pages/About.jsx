@@ -1,5 +1,4 @@
 import React from "react";
-import SectionHeading from "../components/SectionHeading";
 import { motion } from "framer-motion";
 import { TfiHtml5 } from "react-icons/tfi";
 import { IoLogoCss3 } from "react-icons/io";
@@ -22,12 +21,14 @@ const About = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
     >
-      <div className="max-w-container mx-auto px-10 h-[100vh] py-12">
-        <SectionHeading heading={"about"} span={"me"} />
-        <div className="flex justify-between items-center mt-[50px]">
+      <div className="max-w-container mx-auto px-10 h-[100vh] py-8">
+        <h2 className=" uppercase font-dancing text-center font-bold text-4xl text-white">
+          About <span className=" text-yellow-400">me</span>
+        </h2>
+        <div className="flex justify-between items-center mt-[20px] gap-x-28">
           <div className=" mt-12 ">
             <h2 className=" font-roboto text-xl uppercase text-white font-bold">
-              professional info
+              professional <span className=" text-yellow-400">info</span>
             </h2>
             <div className="bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r px-5 py-3 rounded-lg mt-8">
               <h4 className=" font-roboto text-lg font-bold uppercase text-center text-white">
@@ -39,8 +40,11 @@ const About = () => {
                 <p>session: 2017-22</p>
               </div>
             </div>
-            <div className="flex items-center justify-between mt-10">
-              <div className="bg-gradient-to-bl from-gray-900 to-gray-600 hover:to-yellow-400 transition-all duration-700 p-6 rounded-full cursor-pointer inline-block">
+            <div className="flex items-center justify-between mt-10 w-[300px]">
+              <div
+                title="GitHub link"
+                className="bg-gradient-to-bl from-gray-700 to-gray-600 hover:to-yellow-400 transition-all duration-700 p-6 rounded-full cursor-pointer inline-block"
+              >
                 <Link
                   className="text-xl text-white"
                   to="https://github.com/mamunurroshid90?tab=repositories"
@@ -49,24 +53,28 @@ const About = () => {
                   <FaGithub />
                 </Link>
               </div>
-              <button className="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white px-3 py-3 rounded-lg uppercase font-roboto font-medium text-lg hover:to-yellow-600">
+              <button className="bg-gradient-to-r from-gray-700 via-gray-500 to-black text-white px-3 py-3 rounded-lg uppercase font-roboto font-medium text-lg hover:to-yellow-600 animate-pulse inline-block">
                 <Link
                   to="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%221avHSyIPJChUEuFVabhG4ZZIFLMHxJAkf%22%5D,%22action%22:%22open%22,%22userId%22:%22100792006489718517770%22,%22resourceKeys%22:%7B%7D%7D"
                   target="_blank"
                   className="flex items-center gap-2"
                 >
-                  download cv <IoMdCloudDownload className=" text-xl" />
+                  download cv{" "}
+                  <IoMdCloudDownload className=" text-xl animate-bounce w-6 h-6" />
                 </Link>
               </button>
             </div>
           </div>
-          <div className="w-[800px] ">
-            <h2 className=" font-roboto text-3xl text-center uppercase mr-[150px] text-white font-bold mt-12">
-              skills
+          <div className="  pb-10">
+            <h2 className=" font-roboto text-3xl text-center uppercase text-white font-bold mt-5">
+              skill<span className=" text-yellow-400">s</span>
             </h2>
 
-            <div className="flex flex-wrap gap-10 mt-16 justify-center">
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+            <div className="flex flex-wrap gap-10 mt-10 justify-center">
+              <div
+                title="HTML"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 80 }}
@@ -75,7 +83,10 @@ const About = () => {
                   <TfiHtml5 className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="CSS"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 70 }}
@@ -84,7 +95,10 @@ const About = () => {
                   <IoLogoCss3 className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="bootstrap"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 70 }}
@@ -93,7 +107,10 @@ const About = () => {
                   <SiBootstrap className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="tailwind css"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 70 }}
@@ -102,7 +119,10 @@ const About = () => {
                   <SiTailwindcss className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="figma"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 70 }}
@@ -111,7 +131,10 @@ const About = () => {
                   <FaFigma className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="javaScript"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 50 }}
@@ -120,7 +143,10 @@ const About = () => {
                   <IoLogoJavascript className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="react.js"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 50 }}
@@ -129,7 +155,10 @@ const About = () => {
                   <FaReact className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="next.js"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 30 }}
@@ -138,7 +167,10 @@ const About = () => {
                   <SiNextdotjs className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="firebase"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 30 }}
@@ -147,7 +179,10 @@ const About = () => {
                   <IoLogoFirebase className=" text-2xl" />
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg">
+              <div
+                title="redux"
+                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+              >
                 <div
                   className="radial-progress font-roboto text-white"
                   style={{ "--value": 20 }}

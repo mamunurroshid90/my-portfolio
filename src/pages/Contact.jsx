@@ -62,7 +62,10 @@ const Contact = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
     >
-      <div className="max-w-container mx-auto py-12 px-10 h-[100vh]">
+      <div className="max-w-container mx-auto py-5 px-10 h-[100vh]">
+        <h2 className=" font-dancing text-3xl uppercase text-white text-center">
+          contact
+        </h2>
         <div className=" mt-10 flex items-start gap-10 justify-between">
           <div className=" w-[400px]">
             <h2 className=" text-2xl text-white font-roboto uppercase font-bold">

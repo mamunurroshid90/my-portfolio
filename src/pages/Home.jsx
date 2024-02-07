@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa6";
-import ProfileImage from "../assets/images/portfolio.png";
+import PortfolioImage from "../assets/images/portfolio.jpg";
 import { motion } from "framer-motion";
+import { FaUpRightFromSquare } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -16,21 +16,23 @@ const Home = () => {
           <div className="w-[950px] h-[500px] overflow-hidden">
             <img
               className="rounded-2xl w-full h-full object-cover"
-              src={ProfileImage}
+              src={PortfolioImage}
               alt="portfolio"
             />
           </div>
           <div>
             <div className=" relative">
-              <div className=" pl-12">
-                <h1 className="font-roboto text-[40px] text-yellow-400 font-bold uppercase">
-                  i'm mamunur roshid.
-                </h1>
-                <h2 className="font-roboto text-[40px] text-white font-bold uppercase leading-none">
-                  junior web developer
+              <div>
+                <div className="w-max">
+                  <h1 className="animate-typing overflow-hidden whitespace-nowrap font-roboto pr-5 text-5xl font-bold capitalize text-yellow-400">
+                    hello, I'm mamunur roshid
+                  </h1>
+                </div>
+                <h2 className="font-roboto text-[35px] text-white font-bold capitalize leading-none mt-1">
+                  junior <span className=" text-yellow-400">front-end</span>{" "}
+                  developer
                 </h2>
               </div>
-              <div className=" absolute left-0 top-8 w-10 h-1 rounded bg-yellow-400"></div>
             </div>
             <p className=" font-roboto text-xl text-white mt-7 leading-8">
               I'm a Bangladeshi based web designer & front-end developer focused
@@ -38,12 +40,16 @@ const Home = () => {
               about building excellent software that improves the lives of those
               around me.
             </p>
-            <div className="w-[220px] mt-7 h-[50px] ">
-              <Link className=" pl-6 h-full hover:bg-yellow-400 transition-all duration-300 text-white border border-yellow-400 rounded-full uppercase font-bold font-roboto flex items-center justify-between gap-4">
-                more about me{" "}
-                <div>
-                  <FaArrowRight className=" text-2xl overflow-hidden font-bold bg-yellow-400 h-full w-[50px] inline-block rounded-full" />
-                </div>
+            <div className="relative inline-flex  group mt-10">
+              <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <Link
+                to="contact"
+                href="#"
+                title="Get quote now"
+                className="relative inline-flex items-center justify-center px-8 py-4 text-xl font-bold text-white transition-all duration-300 bg-gray-900 font-roboto rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 capitalize "
+                role="button"
+              >
+                hire me <FaUpRightFromSquare className=" ml-3" />
               </Link>
             </div>
           </div>
