@@ -11,7 +11,7 @@ const Home = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
     >
-      <div className="max-w-container mx-auto py-12 px-10 h-[100vh]">
+      <div className="max-w-container mx-auto py-12 px-10 h-[100vh] ">
         <div className="flex items-center justify-between gap-16">
           <div className="w-[950px] h-[500px] overflow-hidden">
             <img
@@ -28,13 +28,13 @@ const Home = () => {
                     hello, I'm mamunur roshid
                   </h1>
                 </div>
-                <h2 className="font-roboto text-[35px] text-white font-bold capitalize leading-none mt-1">
+                <h2 className="font-roboto text-[35px]  font-bold capitalize leading-none mt-1">
                   junior <span className=" text-yellow-400">front-end</span>{" "}
                   developer
                 </h2>
               </div>
             </div>
-            <p className=" font-roboto text-xl text-white mt-7 leading-8">
+            <p className=" font-roboto text-xl mt-7 leading-8 ">
               I'm a Bangladeshi based web designer & front-end developer focused
               on crafting clean & user-friendly experiences, I am passionate
               about building excellent software that improves the lives of those

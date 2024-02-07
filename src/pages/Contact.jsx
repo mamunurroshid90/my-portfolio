@@ -63,12 +63,12 @@ const Contact = () => {
       transition={{ duration: 0.9 }}
     >
       <div className="max-w-container mx-auto py-5 px-10 h-[100vh]">
-        <h2 className=" font-dancing text-3xl uppercase text-white text-center">
+        <h2 className=" font-dancing text-3xl uppercase dark:text-white text-center">
           contact
         </h2>
         <div className=" mt-10 flex items-start gap-10 justify-between">
           <div className=" w-[400px]">
-            <h2 className=" text-2xl text-white font-roboto uppercase font-bold">
+            <h2 className=" text-2xl dark:text-white font-roboto uppercase font-bold">
               contact info
             </h2>
             <div className=" mt-10">
@@ -80,7 +80,7 @@ const Contact = () => {
                   <p className=" text-base font-roboto uppercase text-[#D4B787]">
                     address point
                   </p>
-                  <p className=" text-base font-roboto text-white capitalize">
+                  <p className=" text-base font-roboto dark:text-white capitalize">
                     151 Fatema-Manjil, Nakhal Para, tejgaon, Dhaka-1215
                   </p>
                 </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                   <p className=" text-base font-roboto uppercase text-[#D4B787]">
                     mail me
                   </p>
-                  <p className=" text-base font-roboto text-white">
+                  <p className=" text-base font-roboto dark:text-white">
                     nijummamun7@gmail.com
                   </p>
                 </div>
@@ -106,19 +106,19 @@ const Contact = () => {
                   <p className=" text-base font-roboto text-[#D4B787] uppercase">
                     call me
                   </p>
-                  <p className="text-base font-roboto text-white">
+                  <p className="text-base font-roboto dark:text-white">
                     +880 1761700244
                   </p>
                 </div>
               </div>
               <div className=" mt-10">
-                <h2 className=" text-lg text-white font-roboto uppercase font-medium">
+                <h2 className=" text-lg dark:text-white font-roboto uppercase font-medium">
                   social info
                 </h2>
                 <div className=" mt-4 flex items-center gap-10">
                   <div className="bg-gradient-to-bl from-gray-900 to-gray-600 hover:to-yellow-400 transition-all duration-700 p-6 rounded-full cursor-pointer">
                     <Link
-                      className=" text-xl text-white"
+                      className=" text-xl dark:text-white"
                       to="https://www.facebook.com/mamunroshid93"
                       target="_blank"
                     >
@@ -127,7 +127,7 @@ const Contact = () => {
                   </div>
                   <div className="bg-gradient-to-bl from-gray-900 to-gray-600 hover:to-yellow-400 transition-all duration-700 p-6 rounded-full cursor-pointer">
                     <Link
-                      className="text-xl text-white"
+                      className="text-xl dark:text-white"
                       to="https://twitter.com/roshidmamun9090"
                       target="_blank"
                     >
@@ -136,7 +136,7 @@ const Contact = () => {
                   </div>
                   <div className="bg-gradient-to-bl from-gray-900 to-gray-600 hover:to-yellow-400 transition-all duration-700 p-6 rounded-full cursor-pointer">
                     <Link
-                      className="text-xl text-white"
+                      className="text-xl dark:text-white"
                       to="https://www.linkedin.com/in/mamunroshid/"
                       target="_blank"
                     >
@@ -161,7 +161,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Your name"
                   name="name"
-                  className="focus:outline-none relative w-full px-4 py-4 text-md text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
+                  className="focus:outline-none relative w-full px-4 py-4 text-md dark:text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
                   required
                 />
               </div>
@@ -170,7 +170,7 @@ const Contact = () => {
                   type="email"
                   placeholder="Email"
                   name="email"
-                  className="focus:outline-none relative w-full px-4 py-4 text-md text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
+                  className="focus:outline-none relative w-full px-4 py-4 text-md dark:text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
                   required
                 />
               </div>
@@ -179,7 +179,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Your subject"
                   name="subject"
-                  className="focus:outline-none relative w-full px-4 py-4 text-md text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
+                  className="focus:outline-none relative w-full px-4 py-4 text-md dark:text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
                   required
                 />
               </div>
@@ -187,7 +187,7 @@ const Contact = () => {
                 <textarea
                   placeholder="Your message"
                   name="message"
-                  className="focus:outline-none relative w-full px-4 py-4 text-md text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
+                  className="focus:outline-none relative w-full px-4 py-4 text-md dark:text-white placeholder-gray-40 bg-inherit border border-gray-600 rounded shadow outline-none"
                   required
                 />
               </div>
@@ -195,7 +195,7 @@ const Contact = () => {
                 <button type="submit">
                   <a
                     href="#_"
-                    class="relative inline-flex items-center px-12 py-3 overflow-hidden text-md font-medium text-white border border-gray-500 rounded hover:text-white group hover:bg-gray-50"
+                    class="relative inline-flex items-center px-12 py-3 overflow-hidden text-md font-medium dark:text-white border border-gray-500 rounded hover:dark:text-white group hover:bg-gray-50"
                   >
                     <span class="absolute left-0 block w-full h-0 transition-all bg-yellow-500 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
                     <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
@@ -310,7 +310,7 @@ const ContactForm = () => {
       </div>
       <div className="pt-0 mb-3">
         <button
-          className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
+          className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold dark:text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
           type="submit"
         >
           Send a message
