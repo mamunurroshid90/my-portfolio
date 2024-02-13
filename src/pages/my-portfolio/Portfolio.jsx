@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SectionHeading from "../../components/SectionHeading";
 import Data from "../../pages/my-portfolio/Data";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -20,8 +19,10 @@ const Portfolio = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
     >
-      <div className="max-w-container mx-auto pb-20 bg-violet-950 px-10 h-screen">
-        <SectionHeading heading={"my"} span={"portfolio"} />
+      <div className="max-w-container mx-auto pb-20 bg-violet-950 px-10 pt-7 h-full">
+        <h2 className=" font-dancing text-3xl uppercase dark:text-white text-center">
+          projects
+        </h2>
         <div className=" justify-center flex gap-5 mt-10">
           <button
             className=" py-1 px-8 rounded-md capitalize text-lg duration-300 font-roboto font-bold outline outline-yellow-400 hover:bg-yellow-400 text-white"
@@ -55,7 +56,7 @@ const Portfolio = () => {
 
             return (
               <motion.div
-                className="card w-auto bg-base-100 shadow-xl image-full "
+                className="card w-auto shadow-xl image-full "
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.9 }}
@@ -65,25 +66,25 @@ const Portfolio = () => {
                 <figure>
                   <img src={image} alt="image" />
                 </figure>
-                <div className="card-body hover:bg-base-100 duration-500 hover:rounded-xl">
-                  <h2 className="card-title uppercase font-roboto font-bold text-xl">
+                <div className="card-body hover:bg-yellow-500 hover:text-white duration-500 hover:rounded-xl">
+                  <h2 className="card-title text-white uppercase font-roboto font-bold text-xl">
                     {title}
                   </h2>
-                  <p className=" font-roboto text-base font-semibold capitalize">
+                  <p className=" font-roboto text-base text-white font-semibold capitalize">
                     {descriptions}
                   </p>
                   <div className="card-actions justify-between">
                     <Link
                       to={liveLink}
                       target="_blank"
-                      className="btn btn-outline btn-warning text-white capitalize text-lg"
+                      className=" text-white border-2 border-white hover:bg-yellow-600 transition-all duration-300 font-semibold py-2 px-6 rounded-lg capitalize text-lg"
                     >
                       live link
                     </Link>
                     <Link
                       to={sourceCode}
                       target="_blank"
-                      className="btn btn-warning btn-outline hover:text-white capitalize text-lg"
+                      className="text-white border-2 border-white hover:bg-yellow-600 transition-all duration-300 font-semibold py-2 px-6 rounded-lg capitalize text-lg"
                     >
                       source code
                     </Link>

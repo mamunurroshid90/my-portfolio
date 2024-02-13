@@ -27,20 +27,20 @@ const About = () => {
         </h2>
         <div className="flex justify-between items-center mt-[20px] gap-x-28">
           <div className=" mt-12 ">
-            <h2 className=" font-roboto text-xl uppercase text-white  font-bold">
+            <h2 className=" font-roboto text-2xl uppercase text-white  font-bold">
               professional <span className=" text-yellow-400">info</span>
             </h2>
             <div className=" bg-violet-900 px-5 py-3 rounded-lg mt-8">
               <h4 className=" font-roboto text-lg font-bold uppercase text-center text-white">
                 Education
               </h4>
-              <div className=" font-roboto text-sm font-semibold capitalize mt-2 text-white">
+              <div className=" font-roboto text-md font-semibold capitalize mt-2 text-white">
                 <p className="">graduation: department of bangla</p>
                 <p>institution: dhaka college</p>
                 <p>session: 2017-22</p>
               </div>
             </div>
-            <div className="flex items-center justify-between mt-10 w-[300px]">
+            <div className="flex items-center justify-between mt-8 w-[300px]">
               <div
                 title="GitHub link"
                 className=" bg-violet-900 hover:bg-yellow-500 transition-all duration-700 p-6 rounded-full cursor-pointer inline-block text-white"
@@ -53,7 +53,7 @@ const About = () => {
                   <FaGithub />
                 </Link>
               </div>
-              <button className=" bg-violet-700 hover:bg-yellow-500 transition-all duration-500 hover:scale-110 px-4 py-3 rounded-lg uppercase font-roboto font-medium text-lg inline-block text-white">
+              <button className=" bg-yellow-500 hover:bg-yellow-800 transition-all duration-500 hover:scale-110 px-4 py-3 rounded-lg uppercase font-roboto font-medium text-lg inline-block text-white">
                 <Link
                   to="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%221avHSyIPJChUEuFVabhG4ZZIFLMHxJAkf%22%5D,%22action%22:%22open%22,%22userId%22:%22100792006489718517770%22,%22resourceKeys%22:%7B%7D%7D"
                   target="_blank"
