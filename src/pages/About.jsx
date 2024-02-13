@@ -21,7 +21,7 @@ const About = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
     >
-      <div className="max-w-container mx-auto px-10 h-[100vh] py-8">
+      <div className="max-w-container mx-auto px-10 h-screen bg-violet-950 pt-16">
         <h2 className=" uppercase font-dancing text-white text-center font-bold text-4xl ">
           About <span className=" text-yellow-400">me</span>
         </h2>
@@ -30,7 +30,7 @@ const About = () => {
             <h2 className=" font-roboto text-xl uppercase text-white  font-bold">
               professional <span className=" text-yellow-400">info</span>
             </h2>
-            <div className="bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r px-5 py-3 rounded-lg mt-8">
+            <div className=" bg-violet-900 px-5 py-3 rounded-lg mt-8">
               <h4 className=" font-roboto text-lg font-bold uppercase text-center text-white">
                 Education
               </h4>
@@ -43,7 +43,7 @@ const About = () => {
             <div className="flex items-center justify-between mt-10 w-[300px]">
               <div
                 title="GitHub link"
-                className="bg-gradient-to-bl from-gray-700 to-gray-600 hover:to-yellow-400 transition-all duration-700 p-6 rounded-full cursor-pointer inline-block text-white"
+                className=" bg-violet-900 hover:bg-yellow-500 transition-all duration-700 p-6 rounded-full cursor-pointer inline-block text-white"
               >
                 <Link
                   className="text-xl "
@@ -53,7 +53,7 @@ const About = () => {
                   <FaGithub />
                 </Link>
               </div>
-              <button className="bg-gradient-to-r from-gray-700 via-gray-500 to-black  px-3 py-3 rounded-lg uppercase font-roboto font-medium text-lg hover:to-yellow-600 animate-pulse inline-block text-white">
+              <button className=" bg-violet-700 hover:bg-yellow-500 transition-all duration-500 hover:scale-110 px-4 py-3 rounded-lg uppercase font-roboto font-medium text-lg inline-block text-white">
                 <Link
                   to="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%221avHSyIPJChUEuFVabhG4ZZIFLMHxJAkf%22%5D,%22action%22:%22open%22,%22userId%22:%22100792006489718517770%22,%22resourceKeys%22:%7B%7D%7D"
                   target="_blank"
@@ -65,14 +65,14 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className=" text-white  pb-10">
+          <div className=" text-white pb-10">
             <h2 className=" font-roboto text-3xl text-center uppercase  font-bold mt-5">
               skill<span className=" text-yellow-400">s</span>
             </h2>
             <div className="flex flex-wrap gap-10 mt-10 justify-center">
               <div
                 title="HTML"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -84,7 +84,7 @@ const About = () => {
               </div>
               <div
                 title="CSS"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -96,7 +96,7 @@ const About = () => {
               </div>
               <div
                 title="bootstrap"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -108,7 +108,7 @@ const About = () => {
               </div>
               <div
                 title="tailwind css"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -120,7 +120,7 @@ const About = () => {
               </div>
               <div
                 title="figma"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -132,7 +132,7 @@ const About = () => {
               </div>
               <div
                 title="javaScript"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -144,7 +144,7 @@ const About = () => {
               </div>
               <div
                 title="react.js"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -156,7 +156,7 @@ const About = () => {
               </div>
               <div
                 title="next.js"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -168,7 +168,7 @@ const About = () => {
               </div>
               <div
                 title="firebase"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "
@@ -180,7 +180,7 @@ const About = () => {
               </div>
               <div
                 title="redux"
-                className="bg-gradient-to-r from-gray-700 via-gray-900 to-black px-5 py-4 rounded-lg"
+                className="bg-violet-900 rounded-lg hover:scale-125 transition-all duration-300 hover:bg-yellow-500 px-5 py-4"
               >
                 <div
                   className="radial-progress font-roboto "

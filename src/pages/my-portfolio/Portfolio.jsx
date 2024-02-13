@@ -20,7 +20,7 @@ const Portfolio = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
     >
-      <div className="max-w-container mx-auto pb-20 h-full">
+      <div className="max-w-container mx-auto pb-20 bg-violet-950 px-10 h-screen">
         <SectionHeading heading={"my"} span={"portfolio"} />
         <div className=" justify-center flex gap-5 mt-10">
           <button

@@ -57,12 +57,11 @@ const Contact = () => {
 
   return (
     <motion.section
-      className=" px-[10px]"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
     >
-      <div className="max-w-container mx-auto py-5 px-10 h-[100vh]">
+      <div className="max-w-container mx-auto py-5 px-10 bg-violet-950 h-screen">
         <h2 className=" font-dancing text-3xl uppercase dark:text-white text-center">
           contact
         </h2>
